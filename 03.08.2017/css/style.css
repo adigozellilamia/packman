@@ -1,0 +1,142 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+    width: 970px;
+
+}
+.pacman img{
+    width: 50px;
+    height: 50px;
+}
+.ghost img{
+    width: 50px;
+    height: 50px;
+	margin-top: 30px;
+}
+.pacman img{
+	position: absolute;
+    animation-name: pacman;
+    animation-duration: 6s;  
+    animation-timing-function: linear;
+    animation-delay: 0s; 
+    animation-iteration-count: infinite; 
+	z-index: 2;
+}
+@keyframes pacman {
+    0% {
+		left: 0;
+		top: 0;
+		transform: rotateZ(0deg);
+	}
+	20% {
+		left: 20%;
+		top: 50%;
+		transform: rotateZ(-30deg);
+
+	}
+	40% {
+		left: 40%;
+		top: 0%;
+		transform: rotateZ(0deg);
+	
+	}
+	60% {
+		left: 60%;
+		top: 50%;
+		transform: rotateZ(-30deg);
+
+	}
+	80% {
+		left: 80%;
+		top: 0%;
+		transform: rotateZ(0deg);
+	}
+	100% {
+		left: 100%;
+		top: 50%;
+		transform: rotateZ(-30deg);
+	}
+
+
+     }
+        
+.ghost img{
+	position: absolute;
+    animation-name: ghost;
+    animation-duration: 10s;  
+    animation-timing-function: linear;
+    animation-delay: 0s; 
+    animation-iteration-count: infinite;
+	z-index: 1;
+}
+@keyframes ghost {
+    0% {
+		left: 0;
+		top: 0;
+	}
+	20% {
+		left: 25%;
+		top: 50%;
+
+	}
+	40% {
+		left: 45%;
+		top: 0%;
+	
+	}
+	60% {
+		left: 55%;
+		top: 50%;
+
+	}
+	80% {
+		left: 70%;
+		top: 0%;
+	}
+	100% {
+		left: 100%;
+		top: 50%;
+		
+	}
+}
